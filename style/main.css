@@ -111,6 +111,7 @@ button {
 }
 
 .projects img {
+    height: 200px;
     width: 200px;
     border-radius: var(--radius);
 }
@@ -136,6 +137,11 @@ button {
 
 
 @media (max-width: 700px) {
+    #main .links a {
+        font-size: 25px;
+        margin-right: 2px;
+    }
+
     .contant {
         width: 80%;
     }
