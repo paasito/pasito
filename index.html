@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Pasito</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<script>
+    function view(id) {
+     for(let i = 0; i <= 3; i++) {
+         document.getElementById(i).style.display = 'none';
+         document.getElementById('button' + i).style.background = '#2d2c33';
+
+         document.getElementById(id).style.display = 'inline-block';
+         document.getElementById('button' + id).style.background = '#535259';
+     }
+    }
+ </script>
+<body>
+    <div class="contant mainblock">
+        <div id="main">
+            <img src="img/ava.jpg" alt="это пасито">
+            <div class="info">
+                <h1>Елисей Пасечный</h1>
+                <h2>Web-разработчик</h2>
+                <div class="links">
+                    <a href="https://github.com/paasito" style="margin-left: 0;" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://vk.com/paasito" style="margin-left: 0;" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://t.me/paasito"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+                    <a href="mailto://me@pasito.ru"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <button onclick="view(0)" id="button0" style="background: #535259;">Обо мне</button>
+            <button onclick="view(1)" id="button1">Проекты</button>
+            <button onclick="view(2)" id="button2">Блог</button>
+            <button onclick="view(3)" id="button3">Донат</button>
+        </div>
+    </div><br>
+    <div class="contant" id="0">
+        <h1>Обо мне</h1>
+        <p><b>Привет!</b> Меня зовут Елисей, мне 16 лет. Я начинающий Web-разработчик. Потихоньку учусь и изучаю новое.</p>
+    </div>
+    <div class="contant" id="1" style="display: none;">
+        <h1>Мои работы</h1>
+        <p>На данный момент работ у меня не так много, да и буду я добавлять сюда только стоющие.</p>
+        <div class="projects">
+            <div class="project">
+                <a href="http://theboxs.ru/" target="_blank">
+                    <img src="img/thebox.png" alt="">
+                    <p>Сайт для TheBox</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://vk.com/dogamir/" target="_blank">
+                    <img src="img/dogamir.jpg" alt="">
+                    <p>ДогаМир(заброшен)</p>
+                </a>
+            </div>
+            <div class="project">
+                <img src="img/none.png" alt="" style="background-color:#38383d;">
+                <p>Скоро</p>
+            </div>
+        </div>
+    </div>
+    <div class="contant" id="2" style="display: none;">
+        <h1>Блог</h1>
+        <iframe id="preview" style="border:0px;height:500px;width:100%;margin:5px;border-radius: 22px;" src="https://xn--r1a.website/s/pasito_blog"></iframe>
+    </div>
+    <div class="contant" id="3" style="display: none; text-align: center;">
+        <h1>Донат</h1>
+        <p>Буду очень благодарен вам за проддержку!! <i class="fa-solid fa-heart"></i></p>
+        <a href="https://www.tinkoff.ru/cf/26GKn0TNFlF"  target="_blank"><button>Тинькофф</button></a>
+        <a href="https://qiwi.com/n/COTOFF"  target="_blank"><button>QIWI</button></a>
+    </div>
+</body>
+</html>

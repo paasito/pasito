@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter.ttf') format('truetype');
+}
+
+:root {
+    --bg: #2d2c33;
+    --main: #424147;
+    --dark: #2d2c33;
+    --light: #535259;
+    --white: white;
+    --radius: 22px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    border-radius: 22px;
+}
+
+*::-webkit-scrollbar {
+    border-radius: 22px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--light);
+    border-radius: 22px;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: Inter;
+    font-weight: 300 !important;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 300 !important;
+}
+
+.contant {
+    text-align: left;
+    background: var(--main);
+    width: 70vh;
+    border-radius: var(--radius);
+    display: inline-block;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.contant h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#main {
+    display: inline-flex;
+    width: 100%;
+}
+
+#main img {
+    height: 200px;
+    border-radius: var(--radius);
+}
+
+#main .info {
+    padding-left: 25px;
+    width: 100%;
+}
+
+#main h1 {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#main h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#main .links {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 25px;
+}
+
+#main .links a {
+    background-color: var(--dark);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.nav {
+    text-align: center;
+}
+
+button {
+    background: var(--dark);
+    border-radius: 15px;
+    outline: none;
+    color: var(--white);
+    border: none;
+    margin: 7px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.projects img {
+    width: 200px;
+    border-radius: var(--radius);
+}
+
+.projects div p {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.project {
+    padding-right: 25px;
+}
+
+.project a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+    .contant {
+        width: 80%;
+    }
+
+    #main {
+        display: inline-block;
+        text-align: center !important;
+    }
+
+    #main h1 {
+        text-align: center;
+    }
+
+    .mainblock {
+        text-align: center;
+    }
+
+    #main .info {
+        padding-left: 0;
+    }
+
+    #main .links {
+        padding: 19px;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mainblock {
+        margin-top: 10px;
+    }
+}
