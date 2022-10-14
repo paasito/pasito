@@ -111,7 +111,7 @@ button {
 }
 
 button:hover {
-    background: #2d2c3373;
+    background: #2d2c3373 !important;
 }
 
 .projects img {
