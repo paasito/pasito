@@ -110,6 +110,10 @@ button {
     padding: 10px;
 }
 
+button:hover {
+    background: #2d2c3373;
+}
+
 .projects img {
     height: 200px;
     width: 200px;
