@@ -125,10 +125,14 @@ button {
     overflow-x: auto;
     white-space: nowrap;
     justify-content: center;
+
+    background-color: #535259;
+    border-radius: var(--radius);
+    padding-top: 24px;
 }
 
 .project {
-    padding-right: 25px;
+    padding: 0 12px;
 }
 
 .project a {
@@ -140,6 +144,7 @@ button {
 @media (max-width: 700px) {
     .projects {
         justify-content: start;
+        padding: 24px 24px 2px 24px;
     }
 
     #main .links a {
