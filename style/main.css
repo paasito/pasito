@@ -178,6 +178,7 @@ button {
     }
 
     .nav {
+        margin-top: 14px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
