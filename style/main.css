@@ -40,7 +40,7 @@ h1, h2, h3 {
     font-weight: 300 !important;
 }
 
-.contant {
+.content {
     text-align: left;
     background: var(--main);
     width: 700px;
@@ -50,7 +50,7 @@ h1, h2, h3 {
     padding: 25px;
 }
 
-.contant h1 {
+.content h1 {
     text-align: center;
     margin-top: 0;
 }
@@ -152,7 +152,7 @@ button {
         margin-right: 2px;
     }
 
-    .contant {
+    .content {
         width: 80%;
     }
 
